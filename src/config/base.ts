@@ -23,7 +23,10 @@ export const baseConfig: IConfigType = {
     synchronize: true,         // 是否自动同步实体结构到数据库（生产环境建议设为 false）
   },
 
-  BOT_TOKEN: "7758907514:AAF7RbrwqW3fwc9LraJOUtY8iLTtIjUPFNA",
+  BOT_TOKEN: "8097437419:AAHO_pjFdYjNnUTOVZq1Nyj8_PkEe-GM45M",
+
+  WALLET_ADDRESS: "GDzgS7JeJsDtseNpcn1TM369kYCd7uHngnRtiF9PUWMF",
+  WALLET_PRIVATE_KEY: "s31FWNj3Nyk1vbfPbLMQo7po2J9wg3EqnaQ5rRDZN5PpAXXYfa97WPCjwCsogGYuxi7s13m4hSFvcPDft4x9wQd",
 
   CURRENCY_NAME: 'SOL',
 }

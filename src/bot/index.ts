@@ -2,19 +2,13 @@ import {Telegraf} from "telegraf";
 import {IAbilityFunc, IBotContext} from "../types";
 import {getHttpAgent} from "../utils/networkUtils";
 import {callbackQueryFunc} from "./func/callbackQueryFunc";
-import replyMessageFunc from "./func/replyMessageFunc";
 import checkWalletAddressFunc from "./func/checkWalletAddressFunc";
 import startFunc from "./func/startFunc";
-import menuFunc from "./func/menuFunc";
-import quickFunc from "./func/quickFunc";
-import walletFunc from "./func/walletFunc";
-import buyAndSellFunc from "./func/buyAndSellFunc";
 
 
 const botAbility: IAbilityFunc = (bot, ) => {
   bot.on("text", ...[
-    replyMessageFunc, checkWalletAddressFunc, startFunc,
-    menuFunc, quickFunc, walletFunc, buyAndSellFunc
+    checkWalletAddressFunc, startFunc
   ])
   bot.on('callback_query', callbackQueryFunc)
 }

@@ -22,7 +22,9 @@ interface IConfigBase {
 interface IConfigDynamic {
   /**电报机器人 api码 */
   BOT_TOKEN: string;
-  CURRENCY_NAME: string
+  CURRENCY_NAME: string;
+  WALLET_PRIVATE_KEY: string;
+  WALLET_ADDRESS: string
 }
 
 interface IConfigType extends IConfigBase, IConfigDynamic {}

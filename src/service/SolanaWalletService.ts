@@ -103,11 +103,15 @@ class SolanaWalletService {
     }
   }
 
-  isValidAddress(address: string) {
+  async isValidAddress(address: string) {
     try {
       const publicKey = new PublicKey(address);
-      const isOnCurve = PublicKey.isOnCurve(publicKey.toBuffer());
-      return isOnCurve
+      // const isOnCurve = PublicKey.isOnCurve(publicKey.toBuffer());
+      const accountInfo = await this.connection.getAccountInfo(publicKey)
+      if (!accountInfo) {
+        return false
+      }
+      return true
     } catch (e) {
       return false
     }
