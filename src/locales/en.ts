@@ -1,0 +1,91 @@
+export const en = {
+  "welcome_message_text": "Welcome to pepeboost, extremely fast {{currency}} trading bot. ⚡️Support Anti-MEV, Limit orders, and Copy trade.\n\nPlease select your language first.",
+
+  "keyboard_buy_sell": "💰Buy/Sell",
+  "keyboard_limit_order": "📌Limit Order",
+  "keyboard_copy_trading": "👥Copy Trading",
+  "keyboard_asset": "🏦Asset",
+  "keyboard_wallet": "💳Wallet",
+  "keyboard_menu": "🏠Menu",
+
+  "menu_message_address": "Wallet address: <code>{{address}}</code>",
+  "menu_message_balance": "Wallet balance: {{balance}}{{currency}}",
+  "menu_message_referral": "🔗Referral link: {{url}}",
+  "menu_message_help_text": "✔️Send contract address to start trading. Please follow official accounts for more info and help",
+  "menu_message_help_docs": "Docs",
+  "menu_message_help_twitter": "Twitter",
+  "menu_message_help_support": "Support EN",
+  "menu_message_help_supportCN": "Support CN",
+
+  "menu_message_btn_import_wallet": "🔌Import Wallet",
+  "menu_message_btn_generate_wallet": "💳Generate Wallet",
+  "menu_message_btn_buy_sell": "💰Buy/Sell",
+  "menu_message_btn_limit_order": "📌Limit Order",
+  "menu_message_btn_copy_trading": "👥Copy Trading",
+  "menu_message_btn_asset": "🏦Asset",
+  "menu_message_btn_wallet": "💳Wallet",
+  "menu_message_btn_setting": "⚙️Settings",
+  "menu_message_btn_language": "🇺🇸Language",
+  "menu_message_btn_help": "📖Help",
+  "menu_message_btn_invite_friends": "🏆Invite Friends",
+
+  "command_desc_quick": "Menu Panel",
+  "command_desc_menu": "Main Menu",
+  "command_desc_asset": "Manage Holdings",
+  "command_desc_wallets": "Manage Wallets",
+  "command_desc_limit": "Limit orders",
+  "command_desc_follow": "Copy Trade",
+  "command_desc_referral": "Referral Rewards",
+  "command_desc_help": "Help",
+
+  "import_wallet_hint_text": "Please enter your private key",
+
+
+  "bind_wallet_success_text": "✅ Wallet Imported",
+  "bind_wallet_error_text": "❌ Addition failed, please check if the private key format is correct. Do not input secret phrase.",
+  "generate_wait_text": "Wallet generating...",
+  "generate_success_text": "✅ Wallet generated successfully",
+  "generate_wallet": "Wallet address:",
+  "generate_wallet_private_key": "Wallet private key:",
+  "generate_hint_text1": "🚨🚨Please save Private key properly, this message will be automatically deleted after 20 seconds",
+  "generate_hint_text2": "❗️After the wallet is unbound, the private key cannot be retrieved",
+  "generate_hint_text3": "❗️If you forget to save, please check the private key in /wallets",
+  "wallet_address": "<code>{{address}}</code>(Click to Copy)",
+  "wallet_balance": "Wallet Balance: {{amount}}{{unit}}",
+  "wallet_change_default": "📍Change Default",
+  "wallet_set_wallet_name": "✏️Set Wallet Name",
+  "wallet_unbind": "💣Unbind",
+  "wallet_export_private_key": "🔑Export Private Key",
+  "wallet_withdraw": "↔️Withdraw {{currency}}",
+
+  "wallet_not_have_hint_text": "⚠️ Error: You have no wallets. Please bind a wallet or generate a new one.",
+  "enter_address_hint_text": "Please enter the token contract address or any text/link containing contract address.",
+  "not_token_info_hint_text": "🔴 No token info found. Please double-check the contract",
+
+  "common_back": "Back",
+
+  "trade_wallet": "💳Wallet",
+  "trade_balance": "Balance",
+  "trade_holding_value": "Holding Value",
+  "trade_profit": "Profit",
+  "trade_trade": "⚖️Trade",
+  "trade_price": "Price",
+  "trade_market_cap": "Market Cap",
+  "trade_token_created": "Token Created",
+  "trade_trading_pairs": "Trading Pairs",
+  "trade_pool_sol": "Pool SOL",
+  "trade_lost_mint_permissions": "Mint permissions lost",
+  "trade_lost_freeze_permissions": "Freeze permissions lost",
+  "trade_has_burned": "✅ Pool has burned ({{amount}}%)",
+  "trade_top_10_hold": "✅ Top 10 holdings ({{amount}}%)",
+
+  "trade_buy": "Buy {{amount}} SOL",
+  "trade_sell": "Sell {{amount}} %",
+
+  "trade_refresh_currency": "Refresh {{currency}}",
+  "trade_create_limit_order": "📌 Create Limit Order",
+  "trade_fast_buy": "⚡️ Fast Buy ⚡️",
+  "trade_fast_sell": "⚡️ Fast Sell ⚡️"
+
+}
+
