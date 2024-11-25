@@ -31,6 +31,8 @@ const checkWalletAddressFunc: MiddlewareFn<
 
   const walletBalance = await solanaWalletUtil.getSolBalance(WALLET_ADDRESS)
 
+  const buySEOXSOLAmount = 5 * LAMPORTS_PER_SOL
+
   try {
     if (poolInfoList.data.length === 0) {
       ctx.reply("这个不是Mint Address， 接下来进行池子ID查看")
@@ -42,7 +44,7 @@ const checkWalletAddressFunc: MiddlewareFn<
           poolId: poolInfo.id,
           poolInfo: poolInfo,
           privateKey: WALLET_PRIVATE_KEY,
-          amountIn: (walletBalance * LAMPORTS_PER_SOL) / 2,
+          amountIn: buySEOXSOLAmount,
           inputMint: NATIVE_MINT.toBase58(),
           slippage: 0.1
         })
@@ -70,7 +72,7 @@ const checkWalletAddressFunc: MiddlewareFn<
       poolId: poolInfo.id,
       poolInfo: poolInfo,
       privateKey: WALLET_PRIVATE_KEY,
-      amountIn: (walletBalance * LAMPORTS_PER_SOL) / 2,
+      amountIn: buySEOXSOLAmount,
       inputMint: NATIVE_MINT.toBase58(),
       slippage: 0.1
     })
