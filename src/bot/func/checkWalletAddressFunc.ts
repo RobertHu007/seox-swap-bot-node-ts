@@ -29,7 +29,7 @@ const checkWalletAddressFunc: MiddlewareFn<
 
   const poolInfoList = await raydiumUtil.getContractPoolInfo(poolInfoIdOrMintAddress, PoolFetchType.All)
 
-  const walletBalance = await solanaWalletUtil.getSolBalance(WALLET_ADDRESS)
+  // const walletBalance = await solanaWalletUtil.getSolBalance(WALLET_ADDRESS)
 
   const buySEOXSOLAmount = 5 * LAMPORTS_PER_SOL
 
